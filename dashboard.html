@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+   
+    <div class="container">
+      <div class="cashmenu">
+        <div class="menu">
+            
+                        <div class="profile">
+                            <img src="logo.png" width="150" class="pro">
+                                <h2 class="tlogo">School Mag</h2>
+                        </div>
+                        <div class="listmenu">
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i>Dashboard</a>
+                            </li>
+                            
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-user"></i>Students/Classes<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allStudent.html">All Students</a></li>
+                                    <li><a href="addStudent.html">Add Student</a></li>
+                                    <li><a href="levels.html">Anlyses All Levels</a></li>
+                                    <li><a href="paymentst.html">Add Student payment</a></li>
+                                    <li><a href="Allstudentpayment.html">All Student payment</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-chalkboard-user"></i>Teachers<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allteachers.html">All Teachers</a></li>
+                                    <li><a href="addteachers.html">Add Teacher</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-sack-dollar"></i>Billing<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="addBill.html">Add Bills</a></li>
+                                    <li><a href="allbillis.html">Analys All Bills</a></li>
+                                </ul>
+                            </li>
+
+                            
+            
+                            <li><a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i>  Log Out</a></li>
+                        </div>
+
+              
+            </div>
+               
+      </div>
+        </div>
+
+
+
+        <div class="content">
+            <div class="titlbar">
+  
+                    <h2>Dashboard </h2>
+                    <i class="fa-solid fa-chart-simple"></i>
+            </div>
+
+
+            <div class="boxes">
+                <div class="box">
+                   
+                    <h2> <i class="fa-solid fa-user"></i>Student</h2>
+                    <span>120</span>
+                </div>
+
+                <div class="box">
+                    <h2><i class="fa-solid fa-chalkboard-user"></i>Teachers</h2>
+                    <span>120</span>
+                </div>
+
+                <div class="box">
+                    <h2><i class="fa-solid fa-sack-dollar"></i>Billing</h2>
+                    <span>$120</span>
+                </div>
+
+                <div class="box">
+                    <h2><i class="fa-solid fa-chalkboard"></i>Classes</h2>
+                    <span>120</span>
+                </div>
+            </div>
+        <div class="anlyall">
+            <div class="analyses">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="analyses2">
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+         
+
+            <div class="tbcontent">
+                <table>
+                    <header>
+                        <tr>
+                            <th>id</th>
+                            <th>Full Name</th>
+                            <th>Phone Number</th>
+                            <th>CIN</th>
+                            <th>Email</th>
+                            <th>sex</th>
+                            <th>Adreess</th>
+                            <th>Level</th>
+                            <th>Subject</th>
+                        </tr>
+                    </header>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mehdy bentaleb</td>
+                            <td>0639369368</td>
+                            <td>kb260031</td>
+                            <td>mehdibentaleb548@gmail.com</td>
+                            <td>man</td>
+                            <td>tanger/morocco</td>
+                            <td>1bac</td>
+                            <td>Math</td>
+                            
+                        </tr>
+    
+                        <tr>
+                            <td>1</td>
+                            <td>Mehdy bentaleb</td>
+                            <td>0639369368</td>
+                            <td>kb260031</td>
+                            <td>mehdibentaleb548@gmail.com</td>
+                            <td>man</td>
+                            <td>tanger/morocco</td>
+                            <td>1bac</td>
+                            <td>Math</td>
+                            
+                        </tr>
+    
+                        <tr>
+                            <td>1</td>
+                            <td>Mehdy bentaleb</td>
+                            <td>0639369368</td>
+                            <td>kb260031</td>
+                            <td>mehdibentaleb548@gmail.com</td>
+                            <td>man</td>
+                            <td>tanger/morocco</td>
+                            <td>1bac</td>
+                            <td>Math</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+    
+    
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['July','August','Septembre','January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+          label: 'Votes per Month',
+          data: [12, 19, 3, 5, 2, 3 , 55 , 1 ,25],
+          borderWidth: 1,
+          backgroundColor: '#1900ff',
+          borderColor: '#1900ff',
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              color: 'black' // y-axis numbers color
+            },
+            title: {
+              display: true,
+              text: 'Number of Votes',
+              color: 'black',
+              font: {
+                size: 14,
+                weight: 'bold'
+              }
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // x-axis numbers color
+            },
+            title: {
+              display: true,
+              text: 'Months',
+              color: 'black',
+              font: {
+                size: 14,
+                weight: 'bold'
+              }
+            }
+          }
+        }
+      }
+    });
+  </script>
+  
+
+<script>
+    const ctx2 = document.getElementById('myChart2');
+  
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

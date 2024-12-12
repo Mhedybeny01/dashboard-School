@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="addBill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="menu">
+            
+                        <div class="profile">
+                            <img src="logo.png" width="150" class="pro">
+                                <h2 class="tlogo">School Mag</h2>
+                        </div>
+                        <div class="listmenu">
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i>Dashboard</a>
+                            </li>
+                            
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-user"></i>Students/Classes<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allStudent.html">All Students</a></li>
+                                    <li><a href="addStudent.html">Add Student</a></li>
+                                    <li><a href="levels.html">Anlyses All Levels</a></li>
+                                    <li><a href="paymentst.html">Add Student payment</a></li>
+                                    <li><a href="Allstudentpayment.html">All Student payment</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-chalkboard-user"></i>Teachers<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allteachers.html">All Teachers</a></li>
+                                    <li><a href="addteachers.html">Add Teacher</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-sack-dollar"></i>Billing<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="addBill.html">Add Bills</a></li>
+                                    <li><a href="allbillis.html">Analys All Bills</a></li>
+                                </ul>
+                            </li>
+
+                            
+            
+                            <li><a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i>  Log Out</a></li>
+                        </div>
+
+              
+            </div>
+               
+            
+        </div>
+
+
+
+        <div class="content">
+            <div class="titlbar">
+                    <h2>Add Student</h2>
+                    <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="addcontent">
+                <form>
+                    <h2 class="titleform">Add a new Student</h2><br>
+                    <label>Date</label>
+                    <input type="date" name="date">
+                    <label>Cleaning lady</label>
+                    <input type="number" name="Cleaning" placeholder="Enter a price Cleaning lady">
+                    <label>Water and electricity consumption</label>
+                    <input type="number" name="consumption" placeholder="Enter a price Water and electricity consumption">
+                    <label>secretary</label>
+                    <input type="number" name="secretary" class="email" placeholder="Enter a price secretary">
+                    
+                    <label>wifi</label>
+                    <input type="number" name="wifi" placeholder="Enter a price wifi">
+                    <label>commodity</label>
+                    <input type="text" name="commodity" placeholder="Enter a price commodity ">
+                    
+
+                    
+                  
+                    <button type="submit" name="add" class="add">Add</button>
+
+                </form>
+                
+            </div>
+
+
+
+
+
+        </div>

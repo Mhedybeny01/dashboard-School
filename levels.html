@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="levels.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="menu">
+            
+                        <div class="profile">
+                            <img src="logo.png" width="150" class="pro">
+                                <h2 class="tlogo">School Mag</h2>
+                        </div>
+                        <div class="listmenu">
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i>Dashboard</a>
+                            </li>
+                            
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-user"></i>Students/Classes<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allStudent.html">All Students</a></li>
+                                    <li><a href="addStudent.html">Add Student</a></li>
+                                    <li><a href="levels.html">Anlyses All Levels</a></li>
+                                    <li><a href="paymentst.html">Add Student payment</a></li>
+                                    <li><a href="Allstudentpayment.html">All Student payment</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-chalkboard-user"></i>Teachers<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allTeachers.php">All Teachers</a></li>
+                                    <li><a href="addTeacher.php">Add Teacher</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-sack-dollar"></i>Billing<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                  <li><a href="addBill.html">Add Bills</a></li>
+                                  <li><a href="allbillis.html">Analys All Bills</a></li>
+                                </ul>
+                            </li>
+
+                            
+                            <li><a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i>  Log Out</a></li>
+                        </div>
+
+              
+            </div>
+               
+            
+        </div>
+
+
+
+        <div class="content">
+            <div class="titlbar">
+                    <h2>Dashboard </h2>
+                    <i class="fa-solid fa-chart-simple"></i>
+             </div>
+
+            <div class="contentanlys">
+                <h2 class="tanlyses">Anlyses All Levels </h2>
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>1Bac</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l1.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>2Bac</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l2.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>TCS</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l3.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>1eme</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l4.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>2eme</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l5.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart5"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="levels">
+                    <div class="box1">
+                        <h2> <i class="fa-solid fa-graduation-cap"></i> Levele <strong>3eme</strong></h2>
+                        <p>For All data in this is levele</p>
+                        <a href="l6.html"><button>Get Data</button></a>
+                    </div>
+                    <div class="box2">
+                        <h2><i class="fa-solid fa-users"></i> Totole Students</h2>
+                        <span>110</span>
+                    </div>
+                    <div class="anlyses">
+                        <div class="analyses2">
+                            <canvas id="myChart6"></canvas>
+                        </div>
+                    </div>
+
+                </div>
+             </div>
+
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const ctx1 = document.getElementById('myChart1');
+          
+            new Chart(ctx1, {
+              type: 'doughnut',
+              data: {
+                labels: ['Men', 'Women'],
+                datasets: [{
+                  label: '# of Votes',
+                  data: [12, 19],
+                  borderWidth: 1,
+                  backgroundColor: [
+                   
+                    '#1900ff',
+                    '#ff00cc'
+                    
+                    ],
+                borderColor: [
+                    '#1900ff',
+                    '#ff00cc'
+                    ],
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                   ticks: {
+                      color: 'black' // Set y-axis numbers to black
+                    }
+                  },
+                  x: {
+                    ticks: {
+                      color: 'black' // Set y-axis numbers to black
+                    }
+                  }
+                }
+              }
+            });
+          </script>
+
+
+<script>
+    const ctx2 = document.getElementById('myChart2');
+  
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+<script>
+    const ctx3 = document.getElementById('myChart3');
+  
+    new Chart(ctx3, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+<script>
+    const ctx4 = document.getElementById('myChart4');
+  
+    new Chart(ctx4, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+<script>
+    const ctx5 = document.getElementById('myChart5');
+  
+    new Chart(ctx5, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+<script>
+    const ctx6 = document.getElementById('myChart6');
+  
+    new Chart(ctx6, {
+      type: 'doughnut',
+      data: {
+        labels: ['Men', 'Women'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19],
+          borderWidth: 1,
+          backgroundColor: [
+           
+            '#1900ff',
+            '#ff00cc'
+            
+            ],
+        borderColor: [
+            '#1900ff',
+            '#ff00cc'
+            ],
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+           ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          },
+          x: {
+            ticks: {
+              color: 'black' // Set y-axis numbers to black
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>

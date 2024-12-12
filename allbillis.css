@@ -1,0 +1,196 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box;
+    
+}
+body{
+    display: flex;
+}
+.profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+}
+
+.pro{
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+}
+
+.tlogo{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+.menu{
+    
+    background-color:#2F20C1;
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+.menu:hover{
+
+}
+.listmenu{
+    position: relative;
+    list-style-type: none;
+    height: 95%;
+    transition: 0.5s;
+
+}
+.listmenu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+    margin: 8px;
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    transition: 0.4s;
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+
+.listmenu li a i{
+    font-size: 20px;
+    
+    text-align: left;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menu li ul{
+    
+}
+.listmenu li a:hover {
+    background-color: rgba(27, 11, 255, 0.325);
+}
+
+
+.menu ul{
+    display: none;
+    list-style-type: none;
+   
+
+}
+
+.menu li:hover ul{
+    display: block;
+    transition:  0.5s;
+}
+
+.content{
+   background-color: #f5f5f5;
+   padding: 10px;
+   width: 100%;
+}
+
+.titlbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:#2F20C1;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    width: 100%;
+}
+
+.titlbar i{
+    font-size: 26px;
+    margin-right: 20px;
+}
+.titlbar h2{
+    margin-left: 20px;
+}
+
+
+table{
+    width: 95%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    backdrop-filter: blur(70px);
+    box-shadow: rgba(120, 120, 254, 0.332) 0px 7px 29px 0px;
+    padding: 25px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tbcontent{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+tr th{
+    margin-bottom: 10px;
+    background-color:#2F20C1;
+    padding:10px; /* Adds more space inside the th element */
+    color: #f7f7f8;
+    border-radius: 10px;
+    text-align: left;
+}
+td{
+   
+    padding: 6px;
+    color: #1a0081;
+    border-radius: 10px;
+    text-align: left;
+
+}
+
+.analys{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.analyses canvas {
+    background-color: transparent;
+    border: 1px solid transparent;
+    backdrop-filter: blur(70px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(120, 120, 254, 0.332) 0px 7px 29px 0px;
+
+}
+.analyses {
+  
+    width: 47%;
+    gap: 50px; /* Adds space between the charts */
+    margin-top: 40px;
+}
+.analyses2 canvas {
+    background-color: transparent;
+    border: 1px solid transparent;
+    backdrop-filter: blur(70px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(120, 120, 254, 0.332) 0px 7px 29px 0px;
+
+}
+.analyses2 {
+  
+    width: 47%;
+    gap: 50px; /* Adds space between the charts */
+    margin-top: 40px;
+}

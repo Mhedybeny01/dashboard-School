@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="addteachers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="menu">
+            
+                        <div class="profile">
+                            <img src="logo.png" width="150" class="pro">
+                                <h2 class="tlogo">School Mag</h2>
+                        </div>
+                        <div class="listmenu">
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i>Dashboard</a>
+                            </li>
+                            
+                            <li>
+                                <a href="dashboard.html"><i class="fa-solid fa-user"></i>Students/Classes<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allStudent.html">All Students</a></li>
+                                    <li><a href="addStudent.html">Add Student</a></li>
+                                    <li><a href="levels.html">All Classes</a></li>
+                                    <li><a href="paymentst.html">Add Student payment</a></li>
+                                    <li><a href="Allstudentpayment.html">All Student payment</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-chalkboard-user"></i>Teachers<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="allteachers.html">All Teachers</a></li>
+                                    <li><a href="addteachers.html">Add Teacher</a></li>
+                                </ul>
+                            </li>
+            
+                            <li>
+                                <a href="addUsera.php"><i class="fa-solid fa-sack-dollar"></i>Billing<i class="fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="addBill.html">Add Bills</a></li>
+                                    <li><a href="allbillis.html">Analys All Bills</a></li>
+                                </ul>
+                            </li>
+
+                           
+            
+                            <li><a href="#" class="logout"><i class="fa-solid fa-right-from-bracket"></i>  Log Out</a></li>
+                        </div>
+
+              
+            </div>
+               
+            
+        </div>
+
+
+
+        <div class="content">
+            <div class="titlbar">
+                    <h2>Add Teachers</h2>
+                    <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="addcontent">
+                <form>
+                    <h2 class="titleform">Add a new Teachers</h2><br>
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter a Full Name">
+                    <label>Phone Number</label>
+                    <input type="text" name="name" placeholder="Enter a Phone Number">
+                    <label>Email</label>
+                    <input type="email" name="email" class="email" placeholder="Enter a Email Adrress">
+                    <label>Sex</label>
+                    <select name="gender" id="gender">
+                        <option value="man">Man</option>
+                        <option value="woman">Woman</option>
+                    </select>
+                    
+                    <label>CIN</label>
+                    <input type="text" name="carte" placeholder="Enter a CIN">
+                    <label>Adrress</label>
+                    <input type="text" name="adrress" placeholder="Enter a Full Adrress ">
+                    <label>Price Teacher A Month</label>
+                    <input type="number" name="price" placeholder="Enter a Price Teacher a Month ">
+                    <div class="option">
+                        <h3 for="levels">Levels</h3>
+                        <select id="levels" name="levels">
+                            <option value="tcs">TCS</option>
+                            <option value="1bac">1BAC</option>
+                            <option value="2bac">2BAC</option>
+                            <option value="languages">LANGUAGES</option>
+                        </select>
+
+                    <h3 for="subject">Subject</h3>
+                        <select id="subject" name="subject">
+                            <option value="math">MATH</option>
+                            <option value="physique">PHYSIQUE</option>
+                            <option value="svt">SVT</option>
+                            <option value="francaise">FRANCAISE</option>
+                            <option value="english">ENGLISH</option>
+                            <option value="arabic">ARABIC</option>
+                        </select>
+                    </div>
+                    <button type="submit" name="add" class="add">Add</button>
+                   
+
+
+                </form>
+            </div>
+
+
+
+
+
+        </div>
